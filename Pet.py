@@ -29,7 +29,10 @@ class Pet():
         self.reduce_boredom()
     def teach(self):
         word = input("ENTER THE WORD TO BE TAUGHT:")
-        self.sounds.append(word)
+        if word not in self.sounds:
+            self.sounds.append(word)
+        else:
+            print("WORD ALREADY TAUGHT\n")
         self.reduce_boredom()
     def feed(self):
         self.reduce_hunger()
@@ -70,4 +73,4 @@ while x=="y" or x=="Y":
         p1.feed()
     p1.clock_tick()
     p2.clock_tick()
-    x=input("DO YOU WANT TO CONTINUE(x/y)")
+    x=input("DO YOU WANT TO CONTINUE(n/y)")

@@ -52,23 +52,20 @@ class Cat(Pet):
         self.sound = "Meew"
 pick = int(input("SELECT THE PET\n1)Puppy\n2)Kitten\n"))
 if (pick == 2):
-    p1 = Cat()
-    p2 = Dog()
+    p = Cat()
 elif (pick == 1):
-    p2 = Cat()
-    p1 = Dog()
+    p = Dog()
 else:
     print("WRONG INPUT")
 x="y"
 while x=="y" or x=="Y":
     cmd = int(input("COMMANDS:\n1)Greet\n2)Teach\n3)Feed\n"))
-    print(p1)
+    print(p)
     if (cmd == 1):
-        p1.hi()
+        p.hi()
     elif (cmd == 2):
-        p1.teach()
+        p.teach()
     elif (cmd == 3):
-        p1.feed()
-    p1.clock_tick()
-    p2.clock_tick()
+        p.feed()
+    p.clock_tick()
     x=input("DO YOU WANT TO CONTINUE(n/y)")

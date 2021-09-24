@@ -5,7 +5,7 @@ class Pet():
     boredom_threshold = 5
     hunger_threshold = 10
     sounds = [""]
-    def __init__(self, name="Kitty"):
+    def __init__(self, name):
         self.name = name
         self.hunger = randrange(self.hunger_threshold)
         self.boredom = randrange(self.boredom_threshold)

@@ -50,11 +50,17 @@ class Cat(Pet):
     def __init__(self, name="Snowy"):
         Pet.__init__(self, name="Snowy")
         self.sound = "Meew"
-pick = int(input("SELECT THE PET\n1)Puppy\n2)Kitten\n"))
+class Parrot(Pet):
+    def __init__(self, name="Rio"):
+        Pet.__init__(self, name="Rio")
+        self.sound = "Kee"        
+pick = int(input("SELECT THE PET\n1)Puppy(Pluto)\n2)Kitten(Snowy)\n3)Parrot(Rio)\n"))
 if (pick == 2):
     p = Cat()
 elif (pick == 1):
     p = Dog()
+elif (pick==3)
+    p = Parrot()
 else:
     print("WRONG INPUT")
 x="y"

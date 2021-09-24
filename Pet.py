@@ -43,12 +43,10 @@ class Pet():
         self.boredom = max(0, self.boredom - self.boredom_decrement)
         print("\nBoredom reduced")
 class Dog(Pet):
-    sound = []
     def __init__(self, name="Pluto"):
         Pet.__init__(self, name="Pluto")
         self.sound = "Bow"
 class Cat(Pet):
-    sound = []
     def __init__(self, name="Snowy"):
         Pet.__init__(self, name="Snowy")
         self.sound = "Meew"
